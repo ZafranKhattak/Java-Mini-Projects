@@ -39,24 +39,17 @@ class Car {
         System.out.println(car1.getPrice());
         System.out.println("\n============================================");
 
-        if (car1.price >car2.price && car1.price> car3.price )
-        {
+        if (car1.getPrice() > car2.getPrice() && car1.getPrice() > car3.getPrice()) {
             System.out.println("The Following car has the highest price...");
             car1.display();
-        }
-        else if (car2.price > car1.price && car2.price > car3.price)
-        {
+        } else if (car2.getPrice() > car1.getPrice() && car2.getPrice() > car3.getPrice()) {
             System.out.println("The Following car has the highest price...");
             car2.display();
-        }
-        else if (car3.price > car1.price && car3.price > car2.price)
-        {
+        } else if (car3.getPrice() > car1.getPrice() && car3.getPrice() > car2.getPrice()) {
             System.out.println("The Following car has the highest price...");
             car3.display();
-        }
-        else
-        {
-            System.out.println("Thrice have same price");
+        } else {
+            System.out.println("All cars have the same price");
         }
     }
 }
