@@ -19,18 +19,20 @@ class StudentProfile {
     private int age;
     private double cgpa;
 
-    public StudentProfile(int id  , String name , int age , double cgpa)
+    StudentProfile(int id  , String name , int age , double cgpa)
     {
 
         if (age < 0 || cgpa < 0.0 || cgpa > 4.0 )
         {
             System.out.println("Ivalid Data Entry");
             return ;
+        }
             this.id = id;
             this.name = name;
             this.age = age;
             this.cgpa = cgpa;
     }
+
 
     int getId()
     {
@@ -64,5 +66,4 @@ class StudentProfile {
        
         obj.displayInfo();
     }
-}
-}
+    }
